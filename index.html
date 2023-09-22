@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Cris Surprise 💕</title>
+    <link rel="icon" href="images/icon.ico" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript
+      ><link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload">
+    <!-- Header -->
+    <header id="header">
+      <nav>
+        <ul>
+          <select name="year" id="yearSelect"></select>
+
+          <script>
+            // Obtener el elemento select
+            const yearSelect = document.getElementById("yearSelect");
+
+            // Obtener el año actual
+            const currentYear = new Date().getFullYear();
+
+            // Agregar opciones al select para el año actual y los 5 siguientes
+            for (let i = 0; i < 3; i++) {
+              const option = document.createElement("option");
+              option.value = currentYear + i;
+              option.textContent = currentYear + i;
+              yearSelect.appendChild(option);
+            }
+          </script>
+          <li><a href="#intro">Intro ↓</a></li>
+
+          <li>
+            <a href="#beach">Enero ↓</a>
+          </li>
+
+          <li>
+            <a href="#sm">Febrero ↓</a>
+          </li>
+
+          <li>
+            <a href="#summerend">Marzo ↓</a>
+          </li>
+
+          <li>
+            <a href="#LMUvisit">Abril ↓</a>
+          </li>
+
+          <li>
+            <a href="#UCIvisit">Mayo ↓</a>
+          </li>
+
+          <li>
+            <a href="#LMUvisit2">Junio ↓</a>
+          </li>
+
+          <li>
+            <a href="#mybday">Julio ↓</a>
+          </li>
+
+          <li>
+            <a href="#newyear">Agosto ↓</a>
+          </li>
+
+          <!-- NUEVOS-->
+          <li>
+            <a href="#newyear">Septiembre ↓</a>
+          </li>
+
+          <li>
+            <a href="#newyear">Octubre ↓</a>
+          </li>
+
+          <li>
+            <a href="#newyear">Noviembre ↓</a>
+          </li>
+
+          <li>
+            <a href="#newyear">Diciembre ↓</a>
+          </li>
+
+          <li><a href="#outro">Outro</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Intro -->
+    <section id="intro" class="main style1 dark fullscreen">
+      <canvas id="canvas"></canvas>
+      <div class="content">
+        <header>
+          <h1>Alexander's gift for Cristina!🌹</h1>
+        </header>
+
+        <p>
+          Hola, Cristina. <br />
+          Te hago este regalo por que me salió del cora, desde que te conocí
+          honestamente me he sentido más feliz, me alegro de conocerte, eres un
+          amor de persona. <br />
+          Como soy malo haciendo regalos físicos, hice trampa y usé una PC :3
+          <br />
+          Le dediqué mucho tiempo a esto y espero que les guste. ¡¡Muchos
+          besos!!
+        </p>
+
+        <section>
+          <p style="font-size: small"><br />Alexander Sánchez</p>
+          <audio controls loop id="song">
+            <source src="sound/song.mp3" type="audio/mpeg" />
+          </audio>
+          <script>
+            var audio = document.getElementById("song");
+            audio.volume = 0.2; // no deaf pls
+          </script>
+        </section>
+
+        <footer>
+          <a href="#beach" class="button style2 down"></a>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Image sizes: 260 by 500-->
+    <!-- Resize images with: https://www.iloveimg.com/resize-image -->
+
+    <!-- Beach -->
+    <section id="beach" class="main style1 dark">
+      <div class="content">
+        <p>Mis fotos favoritas</p>
+
+        <div class="gallery">
+          <article class="from-left">
+            <span class="image grow"><img src="images/day8.jpg" /></span>
+          </article>
+
+          <article class="from-right">
+            <span class="image grow"><img src="images/day7.jpg" /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mia's Bday -->
+    <section id="miabday" class="main style1 dark">
+      <div class="content">
+        <p>Un chin de risas</p>
+
+        <div class="gallery">
+          <article class="from-right">
+            <span class="image grow"><img src="images/day9.jpg" /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image grow"><img src="images/day25.jpeg" /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LA -->
+    <section id="LA" class="main style1 dark">
+      <div class="content">
+        <p>Mi Podóloga favorita</p>
+
+        <div class="gallery">
+          <article class="from-left">
+            <span class="image rotate-right"
+              ><img src="images/day27.jpg"
+            /></span>
+          </article>
+
+          <article class="from-right">
+            <span class="image rotate-left"
+              ><img src="images/day29.jpg"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-left"
+              ><img src="images/day20.jpg"
+            /></span>
+          </article>
+
+          <article class="from-right">
+            <span class="image rotate-right"
+              ><img src="images/day21.jpg"
+            /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Santa Monica -->
+    <section id="sm" class="main style1 dark">
+      <div class="content">
+        <p>Cosa guapa <3</p>
+
+        <div class="gallery">
+          <article class="from-right">
+            <span class="image rotate-left"
+              ><img src="images/day14.jpg"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-right"
+              ><img src="images/day15.jpg"
+            /></span>
+          </article>
+
+          <article class="from-right">
+            <span class="image rotate-right"
+              ><img src="images/day19.jpg"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-left"
+              ><img src="images/day12.jpg"
+            /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pho -->
+    <section id="pho" class="main style1 dark">
+      <div class="content">
+        <p>Muchacha caprichosa JAJAJA</p>
+
+        <div class="single">
+          <article class="from-right">
+            <span class="image rotate-right"
+              ><img src="images/day5.jpg"
+            /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Summer end -->
+    <section id="summerend" class="main style1 dark">
+      <div class="content">
+        <p>JAJAJJAJAJA 😈</p>
+
+        <div class="gallery">
+          <article class="from-left">
+            <span class="image grow"><img src="images/day10.jpeg" /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image grow"><img src="images/day6.jpg" /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LMU visit -->
+    <section id="LMUvisit" class="main style1 dark">
+      <div class="content">
+        <header>
+          <h2>Saoko mami</h2>
+        </header>
+
+        <p>Bby que estoy fuelte 😊</p>
+
+        <div class="gallery">
+          <article class="from-right">
+            <span class="image rotate-left"
+              ><img src="images/day30.jpeg"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-left"><img src="images/day2.jpg" /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spicy -->
+    <section id="spicy" class="main style1 dark">
+      <div class="content">
+        <div class="single">
+          <article class="from-bottom">
+            <span class="image rotate-right"
+              ><img src="images/day1.jpeg"
+            /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- LMU Visit 2 -->
+    <section id="LMUvisit2" class="main style1 dark">
+      <div class="content">
+        <p>Tu moreno jajjaja</p>
+
+        <div class="gallery">
+          <article class="from-right">
+            <span class="image rotate-right"
+              ><img src="images/alex1.jpeg"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-right"
+              ><img src="images/alex2.webp"
+            /></span>
+          </article>
+
+          <article class="from-left">
+            <span class="image rotate-left"
+              ><img src="images/alex3.jpeg"
+            /></span>
+          </article>
+
+          <article class="from-right">
+            <span class="image rotate-left"
+              ><img src="images/alex4.jpeg"
+            /></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Outro -->
+    <section id="outro" class="main style1 dark fullscreen">
+      <div class="content">
+        <header>
+          <h1>¡Llegaste hasta el final!</h1>
+        </header>
+
+        <p>
+          ¿Te gustó?<br /><br />
+          Gracias por hacerme reir mucho , enserio.<br />
+          <br />
+          Alexander Sánchez💕
+        </p>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.poptrox.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/particles.js"></script>
+  </body>
+</html>
